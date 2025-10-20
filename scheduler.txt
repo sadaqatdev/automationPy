@@ -1,0 +1,8 @@
+export default {
+  async scheduled(controller, env, ctx) {
+    const res = await fetch("https://ai-outreach.streamlit.app/?run=scheduler&auth=" + env.SECRET_KEY, {
+      method: "POST"
+    });
+    console.log("Triggered scheduler:", await res.text());
+  },
+};

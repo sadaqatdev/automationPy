@@ -2,7 +2,9 @@
 from loguru import logger
 import os
 
-def setup_logging(log_path="logs/app.log"):
-    os.makedirs(os.path.dirname(log_path), exist_ok=True)
-    logger.add(log_path, rotation="5 MB", level="INFO", enqueue=True)
+def setup_logging():
+    logger.remove()  # clear default handlers
+    logger.add("app.log", rotation="5 MB", level="INFO", enqueue=False)
+    logger.add(lambda msg: print(msg, end=""), level="INFO")  # console output for Streamlit
     logger.info("Logger initialized.")
+
