@@ -12,7 +12,10 @@ engine = create_engine(
     pool_size=5,
     max_overflow=10,
     pool_pre_ping=True,
-    connect_args={"connect_timeout": 10}
+    connect_args={
+        "connect_timeout": 10,
+        "options": "-h 0.0.0.0"  # 👈 forces IPv4
+    }
 )
 
 def create_tables():
