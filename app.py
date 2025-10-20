@@ -4,7 +4,7 @@ import json
 import openai
 from database import create_tables, insert_professor_record
 from config import OPENAI_API_KEY, GPT_MODEL, SECRET_KEY
-from utils import setup_logging
+# from utils import setup_logging
 from scheduler import run_smart_scheduler
 from loguru import logger
 from sqlalchemy import create_engine
@@ -12,7 +12,7 @@ from config import DB_URL
 
 openai.api_key = OPENAI_API_KEY
 engine = create_engine(DB_URL)
-setup_logging()
+# setup_logging()
 
 st.set_page_config(page_title="🎓 AI Outreach", layout="wide")
 st.sidebar.title("📍 Navigation")
