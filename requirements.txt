@@ -1,0 +1,14 @@
+streamlit
+psycopg2-binary
+google-api-python-client
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+openai
+apscheduler
+pytz
+pandas
+sqlalchemy
+loguru
+pydantic
+tenacity

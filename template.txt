@@ -1,0 +1,10 @@
+Subject: Collaboration on {{research_area}} Research
+
+Dear {{name}},
+
+I’m reaching out from Sadaqat Labs. I found your work at {{university}} fascinating, 
+especially in {{research_area}}. I’d love to discuss potential collaboration opportunities.
+
+Best regards,  
+Sadaqat Hunzai  
+sadaqatdev@gmail.com
