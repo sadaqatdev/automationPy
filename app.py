@@ -9,7 +9,7 @@ from loguru import logger
 from database import create_tables, insert_professor_record
 from config import OPENAI_API_KEY, GPT_MODEL, SECRET_KEY, DB_URL
 from scheduler import run_smart_scheduler
-from utils import setup_logging
+# from utils import setup_logging
 
 # ✅ Initialize logging safely (no multiprocessing)
 # setup_logging()
