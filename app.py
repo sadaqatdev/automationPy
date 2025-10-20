@@ -12,7 +12,7 @@ from scheduler import run_smart_scheduler
 from utils import setup_logging
 
 # ✅ Initialize logging safely (no multiprocessing)
-setup_logging()
+# setup_logging()
 
 # ✅ Configure OpenAI key
 openai.api_key = OPENAI_API_KEY
