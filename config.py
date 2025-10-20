@@ -15,3 +15,4 @@ GPT_MODEL = "gpt-4-turbo"
 # DB Pass
 # VazP3RsjQiwxHcrN
 # postgresql://postgres:VazP3RsjQiwxHcrN@db.ilaovjedbffkwfngqsrs.supabase.co:5432/postgres
+# postgresql://postgres.ilaovjedbffkwfngqsrs:VazP3RsjQiwxHcrN@aws-1-us-east-2.pooler.supabase.com:6543/postgres
