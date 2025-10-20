@@ -4,7 +4,14 @@ from sqlalchemy.pool import QueuePool
 from loguru import logger
 from config import DB_URL
 
-engine = create_engine(DB_URL, poolclass=QueuePool, pool_size=5, max_overflow=10)
+engine = create_engine(
+    DB_URL,
+    poolclass=QueuePool,     # connection pool type
+    pool_size=5,             # base pool size
+    max_overflow=10,         # temporary extra connections
+    pool_pre_ping=True,      # auto-check stale / sleeping DBs
+    connect_args={"connect_timeout": 10}  # avoid long hangs
+)
 
 def create_tables():
     with engine.begin() as conn:
