@@ -12,3 +12,4 @@ sqlalchemy
 loguru
 pydantic
 tenacity
+python-dotenv
